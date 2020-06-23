@@ -36,9 +36,11 @@ export default {
 .navbar {
     background-color: white;
     overflow: hidden;
-    position: relative;
     display: flex;
-    float: right;
+    right: 0;
+    top: 0;
+    z-index: 50;
+    position: absolute;
 }
 .navbar a {
     float: left;
@@ -83,7 +85,6 @@ export default {
     display: block;
 }
 
-.navbar.responsive {position: relative;}
 .navbar.responsive a.icon {
     position: absolute;
 
