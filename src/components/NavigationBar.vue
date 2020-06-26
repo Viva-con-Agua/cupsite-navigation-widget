@@ -1,10 +1,10 @@
 <template>
     <div :class="navbar" id="navigation-bar">
         <div class="links">
-            <a href="#" class="active">START</a>
-            <a href="/#/createyourownsite">EIGENES EVENT</a>
-            <a href="/#/projects">PROJEKTE</a>
-            <a href="/#/about">ABOUT</a>
+            <a href="/" class="active" @click="burger">START</a>
+            <a href="/app/#/createyourevent" @click="burger">EIGENES EVENT</a>
+            <a href="/app/#/projects" @click="burger">PROJEKTE</a>
+            <a href="/app/#/about" @click="burger">ABOUT</a>
         </div>
         <a class="icon" @click="burger">
             <font-awesome-icon icon="bars" />            
@@ -41,6 +41,7 @@ export default {
     top: 0;
     z-index: 50;
     position: absolute;
+    padding: 0px;
 }
 .navbar a {
     float: left;
@@ -48,7 +49,7 @@ export default {
     color: #363636;
     font-family: Museo, sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;        
+    -moz-osx-font-smoothing: grayscale;    
     padding: 0.6em 0.6em;
     text-decoration: none;
     font-size: 17px;
