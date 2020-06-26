@@ -1,10 +1,10 @@
 <template>
     <div :class="navbar" id="navigation-bar">
         <div class="links">
-            <a href="/" class="active">START</a>
-            <a href="/app/#/createyourevent">EIGENES EVENT</a>
-            <a href="/app/#/projects">PROJEKTE</a>
-            <a href="/app/#/about">ABOUT</a>
+            <a href="/" class="active" @click="burger">START</a>
+            <a href="/app/#/createyourevent" @click="burger">EIGENES EVENT</a>
+            <a href="/app/#/projects" @click="burger">PROJEKTE</a>
+            <a href="/app/#/about" @click="burger">ABOUT</a>
         </div>
         <a class="icon" @click="burger">
             <font-awesome-icon icon="bars" />            
